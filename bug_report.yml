@@ -1,0 +1,51 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Security issues: please use the private advisory or security@jetveo.io instead (see SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: Versions
+      description: SDK version from `.jvproj`, output of `jv --version`, OS
+      placeholder: "SDK 1.4.2, jv 0.9.1, macOS 15"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal YAML / C# that triggers it, or a link to a repo
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: Include the full error output (`jv validate`, build log, stack trace). Redact anything confidential.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Runtime
+        - Metadata / YAML
+        - Migrations / deploy
+        - Language server / MCP
+        - CLI
+        - Claude Code plugin
+        - Docs
+        - Not sure
+    validations:
+      required: true

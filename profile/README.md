@@ -29,8 +29,7 @@ jv deploy                        # ship to Jetveo Cloud (or self-host)
 | [jetveo](https://github.com/jetveo/jetveo) | Runtime, SDK and language server |
 | [cli](https://github.com/jetveo/cli) | `jv` — the Jetveo CLI (`@jetveo/cli` on npm) |
 | [examples](https://github.com/jetveo/examples) | Sample applications |
-| [docs](https://github.com/jetveo/docs) | Documentation source — [jetveo.io/docs](https://jetveo.io/docs) <!-- TODO: confirm URL --> |
-| [claude-plugin](https://github.com/jetveo/claude-plugin) | Claude Code plugin: skills, schemas, platform reference |
+
 
 ## License
 
